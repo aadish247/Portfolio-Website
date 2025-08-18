@@ -1840,9 +1840,6 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  body {
-    padding-top: 80px;
-  }
   .hero-main {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -1985,40 +1982,9 @@ footer {
     display: none;
   }
 
-  .navbar {
-    padding: 0.75rem 0;
-    background: rgba(15, 23, 42, 0.95);
-  }
-
-  .nav-container {
-    padding: 0 0.75rem;
-    justify-content: center;
-  }
-
   .nav-links {
-    flex-direction: row;
-    gap: 0.5rem;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    padding: 0.5rem 0;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    max-width: 100%;
-  }
-
-  .nav-links::-webkit-scrollbar {
-    display: none;
-  }
-
-  .nav-links a {
-    font-size: 0.85rem;
-    white-space: nowrap;
-    padding: 0.5rem 0.75rem;
-    border-radius: 6px;
-    background: rgba(59, 130, 246, 0.1);
-    border: 1px solid rgba(59, 130, 246, 0.2);
-    flex-shrink: 0;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   .skills-grid {
