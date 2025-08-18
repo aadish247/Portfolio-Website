@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Aadish Newrekar - AI/Data Engineer (6+ yrs) - Azure & AWS lakehouse, ELT/ETL, forecasting, and RAG platforms" />
+    <meta name="keywords"
+        content="AI Data Engineer, Azure, AWS, ETL, ELT, Lakehouse, MLForecast, LangChain, Databricks, Redshift, Snowflake" />
+    <meta name="author" content="Aadish Newrekar" />
+    <meta name="theme-color" content="#3b82f6" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Aadish Newrekar - AI/Data Engineer Portfolio" />
+    <meta property="og:description"
+        content="AI/Data Engineer with 6+ years building scalable ELT/ETL and lakehouse platforms on Azure & AWS" />
+    <meta property="og:url" content="./" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Aadish Newrekar - AI/Data Engineer Portfolio" />
+    <meta property="twitter:description"
+        content="AI/Data Engineer with 6+ years building scalable ELT/ETL and lakehouse platforms on Azure & AWS" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Aadish Newrekar - AI/Data Engineer Portfolio</title>
+
+    <!-- Critical CSS -->
+    <style>
+        /* Loading animation */
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 1.2rem;
+            color: #3b82f6;
+        }
+
+        .loading::after {
+            content: '';
+            width: 40px;
+            height: 40px;
+            border: 4px solid #1e293b;
+            border-top: 4px solid #3b82f6;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-left: 10px;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Body styling for direct access */
+        body {
+            margin: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            min-height: 100vh;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="scroll-progress"></div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Liquid Glass Navigation Bubble -->
+    <div class="liquid-nav-bubble" id="liquidNavBubble">
+        <div class="bubble-content">
+            <a href="#home" class="bubble-link active" data-section="home">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#skills" class="bubble-link" data-section="skills">
+                <i class="fas fa-code"></i>
+                <span>Skills</span>
+            </a>
+            <a href="#experience" class="bubble-link" data-section="experience">
+                <i class="fas fa-briefcase"></i>
+                <span>Experience</span>
+            </a>
+            <a href="#projects" class="bubble-link" data-section="projects">
+                <i class="fas fa-project-diagram"></i>
+                <span>Projects</span>
+            </a>
+            <a href="#contact" class="bubble-link" data-section="contact">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+        </div>
+        <div class="bubble-glow"></div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-main">
+                    <div class="hero-profile">
+                        <div class="profile-placeholder">
+                            <div class="profile-image-container">
+                                <div class="profile-image">
+                                    <img src="./profile-photo.jpg" alt="Aadish Newrekar"
+                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h1>Aadish Newrekar</h1>
+
+                            <div class="hero-about-content">
+                                <p>AI/Data Engineer with 6+ years building and scaling cloud data platforms. I design
+                                    dependable pipelines and data models that move, organize, and secure data across
+                                    teams—supporting both real-time and scheduled needs. Known for improving
+                                    reliability, cost, and speed, and for partnering with stakeholders to turn data into
+                                    clear, actionable insights.</p>
+                            </div>
+
+                            <div class="hero-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">6+</span>
+                                    <span class="stat-label">Years Experience</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">Data</span>
+                                    <span class="stat-label">Engineering</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">Cloud</span>
+                                    <span class="stat-label">Data Platforms</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">ML</span>
+                                    <span class="stat-label">Pipelines</span>
+                                </div>
+                            </div>
+
+                            <div class="hero-tech">
+                                <span class="tech-label">Core Technologies:</span>
+                                <div class="tech-icons">
+                                    <i class="fab fa-python" title="Python"></i>
+                                    <i class="fas fa-database" title="SQL"></i>
+                                    <i class="fab fa-aws" title="AWS"></i>
+                                    <i class="fab fa-microsoft" title="Azure"></i>
+                                    <i class="fas fa-cloud" title="Databricks"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hero-actions">
+                            <a href="#contact" class="btn btn-primary">
+                                <i class="fas fa-rocket"></i>
+                                Start a Project
+                            </a>
+                            <a href="#experience" class="btn btn-secondary">
+                                <i class="fas fa-eye"></i>
+                                View My Work
+                            </a>
+                            <a href="./Aadish_Newrekar_Resume.pdf" class="btn btn-outline" download>
+                                <i class="fas fa-download"></i>
+                                Download Resume
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero-about">
+                        <div class="card glass">
+                            <h3>Contact Info</h3>
+                            <div class="quick-info">
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Dallas, TX</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+1-707-955-6519</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>arnewrekar26@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="about-social">
+                                <a href="https://linkedin.com/in/aadishnewrekar24" class="social-link" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="https://github.com/aadish247" class="social-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://x.com/aadish24" class="social-link" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                    <span>Twitter</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section compact">
+            <div class="container">
+                <h2 class="text-center">Skills & Technologies</h2>
+                <p class="text-center" style="margin-bottom: 2rem; color: var(--text-secondary); font-size: 1.1rem;">
+                    Technologies and tools directly applied in real-world projects and experiences
+                </p>
+                <div class="skills-compact">
+                    <div class="skill-category">
+                        <h4><i class="fas fa-brain"></i> AI/ML Engineering</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><i class="fab fa-microsoft"></i> Azure ML</span>
+                            <span class="skill-tag"><i class="fas fa-chart-line"></i> MLForecast</span>
+                            <span class="skill-tag"><i class="fas fa-search"></i> Optuna</span>
+                            <span class="skill-tag"><i class="fas fa-link"></i> LangChain</span>
+                            <span class="skill-tag"><i class="fas fa-project-diagram"></i> Neo4j</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i> Qdrant</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4><i class="fas fa-database"></i> Data Engineering & ETL</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
+                            <span class="skill-tag"><i class="fas fa-fire"></i> PySpark</span>
+                            <span class="skill-tag"><i class="fas fa-cloud"></i> Azure Data Factory</span>
+                            <span class="skill-tag"><i class="fas fa-layer-group"></i> Databricks</span>
+                            <span class="skill-tag"><i class="fab fa-aws"></i> AWS Glue</span>
+                            <span class="skill-tag"><i class="fas fa-wind"></i> Apache Airflow</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i> dbt</span>
+                            <span class="skill-tag"><i class="fas fa-cogs"></i> SSIS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4><i class="fas fa-cloud"></i> Cloud Data Platforms</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><i class="fab fa-microsoft"></i> Azure</span>
+                            <span class="skill-tag"><i class="fab fa-aws"></i> AWS</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i> Redshift Serverless</span>
+                            <span class="skill-tag"><i class="fas fa-snowflake"></i> Snowflake</span>
+                            <span class="skill-tag"><i class="fas fa-cloud"></i> Azure Synapse</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i> SQL Server</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i> PostgreSQL</span>
+                            <span class="skill-tag"><i class="fab fa-aws"></i> S3</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4><i class="fas fa-chart-bar"></i> Analytics & Visualization</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><i class="fas fa-chart-pie"></i> Power BI</span>
+                            <span class="skill-tag"><i class="fas fa-chart-area"></i> Tableau</span>
+                            <span class="skill-tag"><i class="fas fa-eye"></i> Amazon QuickSight</span>
+                            <span class="skill-tag"><i class="fas fa-file-contract"></i> Document Intelligence</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4><i class="fas fa-cogs"></i> DevOps & CI/CD</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><i class="fab fa-docker"></i> Docker</span>
+                            <span class="skill-tag"><i class="fas fa-dharmachakra"></i> Kubernetes</span>
+                            <span class="skill-tag"><i class="fab fa-microsoft"></i> Azure DevOps</span>
+                            <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section compact">
+            <div class="container">
+                <h2 class="text-center">Experience</h2>
+                <div class="experience-horizontal">
+                    <div class="exp-card">
+                        <div class="exp-header">
+                            <i class="fas fa-robot exp-icon" style="color: #3b82f6; margin-right: 0.5rem;"></i>
+                            <div>
+                                <h4>AI/Data Engineer</h4>
+                                <span class="exp-company">S-Infotech</span>
+                                <span class="exp-date">Dec 2022–Present</span>
+                            </div>
+                        </div>
+                        <ul style="margin: 0; padding-left: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+                            <li>Built demand forecasting on Azure ML (MLForecast + Optuna), tuning ADF/Databricks
+                                pipelines to cut MAE ~15% and improve throughput</li>
+                            <li>Designed multi-cloud lakehouse (Redshift Serverless + S3 + Spectrum) with
+                                partitioning/caching to reduce query cost ~20%</li>
+                            <li>Shipped RAG platform with LangChain, Azure Cognitive Search, Neo4j knowledge graph, and
+                                Qdrant; CI/CD via Azure DevOps</li>
+                        </ul>
+                        <div class="exp-tech">
+                            <span class="skill-tag"><i class="fab fa-microsoft"></i> Azure ML</span>
+                            <span class="skill-tag"><i class="fas fa-cogs"></i> MLForecast</span>
+                            <span class="skill-tag"><i class="fas fa-search"></i> Optuna</span>
+                            <span class="skill-tag"><i class="fas fa-link"></i> LangChain</span>
+                            <span class="skill-tag"><i class="fas fa-project-diagram"></i> Neo4j</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i> Qdrant</span>
+                            <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                            <span class="skill-tag"><i class="fas fa-docker"></i> Docker</span>
+                            <span class="skill-tag"><i class="fas fa-dharmachakra"></i> Kubernetes</span>
+                        </div>
+                    </div>
+                    <div class="exp-card">
+                        <div class="exp-header">
+                            <i class="fas fa-cloud exp-icon" style="color: #3b82f6; margin-right: 0.5rem;"></i>
+                            <div>
+                                <h4>Data Engineer</h4>
+                                <span class="exp-company">Byju's</span>
+                                <span class="exp-date">Oct 2020–Jul 2022</span>
+                            </div>
+                        </div>
+                        <ul style="margin: 0; padding-left: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+                            <li>Orchestrated ELT via ADF/Synapse ingesting MongoDB logs & LMS CSVs to ADLS; reduced load
+                                latency ~25%</li>
+                            <li>Migrated PostgreSQL → Redshift with AWS Glue; tuned dist/sort keys and batch jobs to cut
+                                load times ~30%</li>
+                            <li>Automated document processing using Azure Document Intelligence + Logic Apps; persisted
+                                outputs to SQL Server for analytics</li>
+                        </ul>
+                        <div class="exp-tech">
+                            <span class="skill-tag"><i class="fas fa-cloud"></i> ADF</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i> Synapse</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i> Redshift</span>
+                            <span class="skill-tag"><i class="fas fa-cogs"></i> AWS Glue</span>
+                            <span class="skill-tag"><i class="fas fa-file-contract"></i> Document Intelligence</span>
+                            <span class="skill-tag"><i class="fab fa-aws"></i> AWS</span>
+                            <span class="skill-tag"><i class="fas fa-snowflake"></i> Snowflake</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i> PostgreSQL</span>
+                        </div>
+                    </div>
+                    <div class="exp-card">
+                        <div class="exp-header">
+                            <i class="fas fa-chart-bar exp-icon" style="color: #3b82f6; margin-right: 0.5rem;"></i>
+                            <div>
+                                <h4>Data Analyst</h4>
+                                <span class="exp-company">Nuclei Technologies</span>
+                                <span class="exp-date">Jul 2018–Oct 2020</span>
+                            </div>
+                        </div>
+                        <ul style="margin: 0; padding-left: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+                            <li>Automated ETL (SSIS, Airflow) and built Power BI dashboards with RLS; reduced reporting
+                                latency ~35%</li>
+                            <li>Implemented CI/CD for SSIS/ADF/Glue pipelines integrating ERP, Salesforce APIs, and flat
+                                files—removed ~30% manual prep</li>
+                            <li>Modeled star/snowflake schemas with dbt in Synapse/Redshift; tuned clusters for ~20%
+                                faster queries</li>
+                        </ul>
+                        <div class="exp-tech">
+                            <span class="skill-tag"><i class="fas fa-cogs"></i> SSIS</span>
+                            <span class="skill-tag"><i class="fas fa-wind"></i> Airflow</span>
+                            <span class="skill-tag"><i class="fas fa-chart-pie"></i> Power BI</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i> dbt</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i> Synapse</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i> SQL Server</span>
+                            <span class="skill-tag"><i class="fas fa-chart-area"></i> Tableau</span>
+                            <span class="skill-tag"><i class="fas fa-eye"></i> Amazon QuickSight</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section compact">
+            <div class="container">
+                <h2 class="text-center">Projects</h2>
+                <div class="projects-single-row">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <i class="fas fa-chart-line project-icon"></i>
+                                <h4>Sales Dashboard Automation</h4>
+                            </div>
+                            <ul class="project-features">
+                                <li><i class="fas fa-database"></i> Nightly ETL to Snowflake with optimized star schema
+                                </li>
+                                <li><i class="fas fa-chart-bar"></i> Interactive Tableau KPIs with auto-refresh
+                                    capabilities</li>
+                                <li><i class="fas fa-lightbulb"></i> Drove pricing & performance insights at S-Infotech
+                                </li>
+                            </ul>
+                            <div class="project-tech">
+                                <span class="skill-tag"><i class="fab fa-python"></i> Airflow</span>
+                                <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                                <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
+                                <span class="skill-tag"><i class="fas fa-snowflake"></i> Snowflake</span>
+                                <span class="skill-tag"><i class="fas fa-chart-area"></i> Tableau</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/aadish247" class="btn btn-sm" target="_blank"><i
+                                        class="fas fa-external-link-alt"></i> Demo</a>
+                                <a href="https://github.com/aadish247" class="btn btn-sm" target="_blank"><i
+                                        class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <i class="fas fa-user-check project-icon"></i>
+                                <h4>Customer Churn Analysis</h4>
+                            </div>
+                            <ul class="project-features">
+                                <li><i class="fas fa-cogs"></i> Advanced feature engineering for churn prediction</li>
+                                <li><i class="fas fa-brain"></i> Logistic regression models with probability scoring
+                                </li>
+                                <li><i class="fas fa-target"></i> Predictive scores informed retention campaigns at
+                                    Byju's</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                                <span class="skill-tag"><i class="fas fa-pandas"></i> pandas</span>
+                                <span class="skill-tag"><i class="fas fa-chart-pie"></i> Power BI</span>
+                                <span class="skill-tag"><i class="fas fa-database"></i> PostgreSQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/aadish247" class="btn btn-sm" target="_blank"><i
+                                        class="fas fa-external-link-alt"></i> Demo</a>
+                                <a href="https://github.com/aadish247" class="btn btn-sm" target="_blank"><i
+                                        class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <i class="fas fa-flask project-icon"></i>
+                                <h4>A/B Test Reporting</h4>
+                            </div>
+                            <ul class="project-features">
+                                <li><i class="fas fa-flask"></i> Designed statistically significant experiments</li>
+                                <li><i class="fas fa-chart-line"></i> Analyzed conversion lift & statistical
+                                    significance</li>
+                                <li><i class="fas fa-rocket"></i> Executive dashboard guided roadmap priorities at
+                                    Nuclei</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                                <span class="skill-tag"><i class="fas fa-calculator"></i> statsmodels</span>
+                                <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
+                                <span class="skill-tag"><i class="fas fa-chart-pie"></i> Power BI</span>
+                                <span class="skill-tag"><i class="fas fa-file-excel"></i> Excel</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/aadish247" class="btn btn-sm" target="_blank"><i
+                                        class="fas fa-external-link-alt"></i> Demo</a>
+                                <a href="https://github.com/aadish247" class="btn btn-sm" target="_blank"><i
+                                        class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <i class="fas fa-graduation-cap project-icon"></i>
+                                <h4>LMS Migration & Document Automation</h4>
+                            </div>
+                            <ul class="project-features">
+                                <li><i class="fas fa-cloud-upload-alt"></i> ELT into ADLS Gen2/Synapse with 25% latency
+                                    reduction</li>
+                                <li><i class="fas fa-file-alt"></i> OCR automation via Logic Apps for document
+                                    processing</li>
+                                <li><i class="fas fa-database"></i> Operationalized in SQL Server at Byju's</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span class="skill-tag"><i class="fas fa-cloud"></i> ADF</span>
+                                <span class="skill-tag"><i class="fas fa-file-contract"></i> Document
+                                    Intelligence</span>
+                                <span class="skill-tag"><i class="fas fa-server"></i> SQL Server</span>
+                                <span class="skill-tag"><i class="fas fa-cloud"></i> Synapse</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/aadish247" class="btn btn-sm" target="_blank"><i
+                                        class="fas fa-external-link-alt"></i> Demo</a>
+                                <a href="https://github.com/aadish247" class="btn btn-sm" target="_blank"><i
+                                        class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section compact">
+            <div class="container">
+                <h2 class="text-center">Let's Work Together</h2>
+                <p class="text-center" style="margin-bottom: 3rem; color: var(--text-secondary);">
+                    Ready to discuss your data engineering or AI project? Let's connect.
+                </p>
+                <div class="contact-modern">
+                    <div class="contact-card glass">
+                        <div class="contact-header">
+                            <i class="fas fa-rocket contact-icon"></i>
+                            <h3>Start Your Project</h3>
+                            <p>Let's build something amazing together</p>
+                        </div>
+                        <div class="contact-details">
+                            <a href="mailto:arnewrekar26@gmail.com" class="contact-link">
+                                <i class="fas fa-envelope"></i>
+                                <span>arnewrekar26@gmail.com</span>
+                            </a>
+                            <a href="tel:+1-707-955-6519" class="contact-link">
+                                <i class="fas fa-phone"></i>
+                                <span>+1-707-955-6519</span>
+                            </a>
+                            <div class="contact-link">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Dallas, TX</span>
+                            </div>
+                        </div>
+                        <div class="contact-social">
+                            <a href="https://linkedin.com/in/aadishnewrekar24" class="social-btn" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/aadish247" class="social-btn" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://x.com/aadish24" class="social-btn" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="education-card glass">
+                        <div class="contact-header">
+                            <i class="fas fa-graduation-cap contact-icon"></i>
+                            <h3>Education & Certifications</h3>
+                            <p>Academic achievements and professional certifications</p>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-link">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <strong>M.S., Information Systems Management</strong><br>
+                                    <span>Arizona State University, Tempe, AZ</span><br>
+                                    <span>Aug 2022–Jul 2023 • 4.0 GPA</span>
+                                </div>
+                            </div>
+                            <div class="contact-link">
+                                <i class="fas fa-university"></i>
+                                <div>
+                                    <strong>B.E., Electronics & Telecommunication</strong><br>
+                                    <span>Vidyalankar Institute of Technology, Mumbai</span><br>
+                                    <span>Aug 2016–Jul 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="certifications">
+                            <h4>Certifications</h4>
+                            <div class="skill-tags">
+                                <a href="https://coursera.org/share/528066ef64286bc03312ac87dfc74e02" target="_blank"
+                                    class="skill-tag-link">
+                                    <span class="skill-tag">Google Data Analytics</span>
+                                </a>
+                                <a href="https://www.udemy.com/certificate/UC-4811daf5-b7d8-4d4b-850a-247ae40ca560/"
+                                    target="_blank" class="skill-tag-link">
+                                    <span class="skill-tag">Python Udemy</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                </div>
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/aadishnewrekar24" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/aadish247" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/aadish24" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aadish Newrekar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Widget -->
+    <div class="floating-widget">
+        <button class="widget-toggle" aria-label="Toggle quick links">
+            <i class="fas fa-rocket"></i>
+        </button>
+        <div class="widget-content">
+            <a href="#contact" class="widget-link">
+                <i class="fas fa-envelope"></i>
+                Contact
+            </a>
+            <a href="./Aadish_Newrekar_Resume.pdf" class="widget-link" download>
+                <i class="fas fa-download"></i>
+                Resume
+            </a>
+            <a href="https://linkedin.com/in/aadishnewrekar24" class="widget-link" target="_blank">
+                <i class="fab fa-linkedin"></i>
+                LinkedIn
+            </a>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation Bubble -->
+    <div class="nav-bubble" id="navBubble">
+        <button class="nav-bubble-toggle" aria-label="Navigation menu">
+            <i class="fas fa-compass"></i>
+        </button>
+        <div class="nav-bubble-content">
+            <a href="#home" class="nav-bubble-link">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#skills" class="nav-bubble-link">
+                <i class="fas fa-cogs"></i>
+                <span>Skills</span>
+            </a>
+            <a href="#experience" class="nav-bubble-link">
+                <i class="fas fa-briefcase"></i>
+                <span>Experience</span>
+            </a>
+            <a href="#projects" class="nav-bubble-link">
+                <i class="fas fa-project-diagram"></i>
+                <span>Projects</span>
+            </a>
+            <a href="#contact" class="nav-bubble-link">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+        </div>
+    </div>
+
+
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll progress indicator
+        window.addEventListener('scroll', () => {
+            const scrollProgress = document.querySelector('.scroll-progress');
+            const scrollTop = window.pageYOffset;
+            const docHeight = document.body.offsetHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            scrollProgress.style.width = scrollPercent + '%';
+        });
+
+        // Floating widget toggle
+        const widgetToggle = document.querySelector('.widget-toggle');
+        const widgetContent = document.querySelector('.widget-content');
+
+        widgetToggle.addEventListener('click', () => {
+            widgetContent.classList.toggle('active');
+            widgetToggle.classList.toggle('active');
+        });
+
+        // Close widget when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.floating-widget')) {
+                widgetContent.classList.remove('active');
+                widgetToggle.classList.remove('active');
+            }
+        });
+
+        // Active navigation highlighting
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-links a, .quick-links-bar a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.card, .exp-card, .project-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Add loading state management
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+
+        // Sticky Navigation Bubble
+        const navBubble = document.getElementById('navBubble');
+        const navBubbleToggle = document.querySelector('.nav-bubble-toggle');
+        const navBubbleContent = document.querySelector('.nav-bubble-content');
+        const navBubbleLinks = document.querySelectorAll('.nav-bubble-link');
+
+        // Show/hide nav bubble on scroll
+        let lastScrollY = window.scrollY;
+        let scrollThreshold = 300; // Show after scrolling 300px
+
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY > scrollThreshold) {
+                navBubble.classList.add('visible');
+            } else {
+                navBubble.classList.remove('visible');
+                navBubbleContent.classList.remove('active');
+            }
+
+            lastScrollY = currentScrollY;
+        });
+
+        // Toggle nav bubble content
+        navBubbleToggle.addEventListener('click', () => {
+            navBubbleContent.classList.toggle('active');
+            navBubbleToggle.classList.toggle('active');
+        });
+
+        // Close nav bubble when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav-bubble')) {
+                navBubbleContent.classList.remove('active');
+                navBubbleToggle.classList.remove('active');
+            }
+        });
+
+        // Smooth scroll for nav bubble links
+        navBubbleLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    navBubbleContent.classList.remove('active');
+                    navBubbleToggle.classList.remove('active');
+                }
+            });
+        });
+
+        // Liquid Glass Navigation Bubble - Show on scroll, hide at bottom
+        const liquidNavBubble = document.getElementById('liquidNavBubble');
+        const bubbleLinks = document.querySelectorAll('.bubble-link');
+
+        function updateLiquidNav() {
+            const scrollY = window.scrollY;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.body.offsetHeight;
+            const scrollBottom = scrollY + windowHeight;
+            const bottomThreshold = 100; // Hide when 100px from bottom
+
+            // Check if we're near the bottom of the page
+            const isNearBottom = scrollBottom >= documentHeight - bottomThreshold;
+
+            // Show/hide bubble based on scroll and bottom proximity
+            if (scrollY > 300 && !isNearBottom) {
+                liquidNavBubble.classList.add('show');
+            } else {
+                liquidNavBubble.classList.remove('show');
+            }
+
+            // Update active states
+            const sections = ['home', 'skills', 'experience', 'projects', 'contact'];
+            let currentSection = 'home';
+
+            for (const section of sections) {
+                const element = document.getElementById(section);
+                if (element) {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top <= 100 && rect.bottom >= 100) {
+                        currentSection = section;
+                        break;
+                    }
+                }
+            }
+
+            bubbleLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.dataset.section === currentSection) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        // Smooth scroll for liquid bubble links
+        bubbleLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        window.addEventListener('scroll', updateLiquidNav);
+        updateLiquidNav();
+    </script>
+</body>
+
+</html>
